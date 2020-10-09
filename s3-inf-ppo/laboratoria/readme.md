@@ -1,0 +1,3 @@
+INDEKS: 40317
+ADRES: michal.myskow@stud.pwsz.legnica.edu.pl
+IMIĘ I NAZWISKO: Michał Myśków
