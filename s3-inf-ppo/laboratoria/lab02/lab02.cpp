@@ -44,7 +44,7 @@ class Student {
 		
 		bool getStudentAktywnosc() {
 			return this->studentaktywnosc;
-		}	
+		}
 };
 
 string getRandomStudentNumber() {
@@ -83,7 +83,7 @@ int main() {
 	for(int i = 0; i < STUDENTS_COUNT; i++) {
 		Student student;
 		student.setStudentNo(getRandomStudentNumber());
-		student.setStudentImie(getRandomStudentImie());
+		student.setStudentNo(getRandomStudentImie());
 		student.setStudentNazwisko(getRandomStudentNazwisko());
 		student.setStudentAktywnosc(getRandomStudentAktywnosc());
 		students.push_back(student);
@@ -93,8 +93,8 @@ int main() {
 	
 	for(int i = 0; i < students.size(); i++) {
 		Student student = students.at(i);
-		cout << student.getStudentImie() << "  " << student.getStudentNazwisko() << "  " <<
-		 student.getStudentNo()<< " Aktywnosc: " << student.getStudentAktywnosc()<< endl;
+			cout << student.getStudentImie() << "  " << student.getStudentNazwisko() << "  " <<
+				student.getStudentNo()<< " Aktywnosc: " << student.getStudentAktywnosc()<< endl;
 	}
 	
 	cout << endl << "Lista aktywnych studentow:" << endl << endl;
@@ -102,8 +102,8 @@ int main() {
 	for(int i = 0; i < students.size(); i++) {
 		Student student = students.at(i);
 		if (student.getStudentAktywnosc() == 1){
-		cout << student.getStudentImie() << "  " << student.getStudentNazwisko() << "  " <<
-		 student.getStudentNo()<< " Aktywnosc: " << student.getStudentAktywnosc()<< endl;
+			cout << student.getStudentImie() << "  " << student.getStudentNazwisko() << "  " <<
+				student.getStudentNo()<< " Aktywnosc: " << student.getStudentAktywnosc()<< endl;
 		}
 	}
 	
